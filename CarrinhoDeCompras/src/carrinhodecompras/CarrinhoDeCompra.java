@@ -25,7 +25,7 @@ public final class CarrinhoDeCompra {
 
     public final void removerItem(String nome) {
         for (Item item : itens) {
-            if (item.getNOME().toLowerCase().equals(nome.toLowerCase())) {
+            if (item.getNome().toLowerCase().equals(nome.toLowerCase())) {
                 itens.remove(item);
             }
         }
@@ -34,14 +34,14 @@ public final class CarrinhoDeCompra {
     public final double calcularValorTotal() {
         double valorTotal = 0;
         for (Item item : itens) {
-            valorTotal += item.getQUANTIDADE() * item.getPRECO();
+            valorTotal += item.getQuantidade() * item.getPreco();
         }
         return valorTotal;
     }
 
     public final void exibirItens() {
         for (Item item : itens) {
-            System.out.println(item.getNOME() + " " + item.getQUANTIDADE() + " " + item.getPRECO());
+            System.out.println(item.toString());
         }
     }
 
