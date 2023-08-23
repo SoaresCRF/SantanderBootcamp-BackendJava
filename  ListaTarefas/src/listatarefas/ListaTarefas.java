@@ -23,9 +23,9 @@ public class ListaTarefas {
         tarefas.add(tarefa);
     }
 
-    public final void removerTarefa(String descricao) {
+    public final void removerTarefa(String nome) {
         for (Tarefa tarefa : tarefas) {
-            if (tarefa.getNOME().toLowerCase().equals(descricao.toLowerCase())) {
+            if (tarefa.getNOME().toLowerCase().equals(nome.toLowerCase())) {
                 tarefas.remove(tarefa);
             }
         }
