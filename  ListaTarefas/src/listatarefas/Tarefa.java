@@ -19,4 +19,10 @@ public final class Tarefa {
     public final String getNOME() {
         return NOME;
     }
+
+    @Override
+    public String toString() {
+        return "Tarefa{" + "NOME=" + NOME + '}';
+    }
+
 }
