@@ -20,6 +20,7 @@ public class Main {
         lt.adicionarTarefa(new Tarefa("comer"));
         lt.adicionarTarefa(new Tarefa("correr"));
         lt.adicionarTarefa(new Tarefa("estudar"));
+        lt.adicionarTarefa(new Tarefa("estudar"));
         lt.adicionarTarefa(new Tarefa("vacinar"));
         lt.adicionarTarefa(new Tarefa("passear"));
 
