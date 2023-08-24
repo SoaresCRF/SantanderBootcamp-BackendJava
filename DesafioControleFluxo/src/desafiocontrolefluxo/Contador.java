@@ -6,13 +6,13 @@ public class Contador {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner terminal = new Scanner(System.in);
+        final Scanner terminal = new Scanner(System.in);
 
         System.out.print("Digite o primeiro parâmetro: ");
-        int parametroUm = terminal.nextInt();
+        final int parametroUm = terminal.nextInt();
 
         System.out.print("\nDigite o segundo parâmetro: ");
-        int parametroDois = terminal.nextInt();
+        final int parametroDois = terminal.nextInt();
 
         System.out.println();
 
@@ -24,12 +24,12 @@ public class Contador {
         }
     }
 
-    static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
+    final static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
         if (parametroUm > parametroDois) {
             throw new ParametrosInvalidosException();
         }
 
-        int contagem = parametroDois - parametroUm;
+        final int contagem = parametroDois - parametroUm;
         for (int i = 1; i <= contagem; i++) {
             System.out.println("Imprimindo o número " + i + "°");
         }
